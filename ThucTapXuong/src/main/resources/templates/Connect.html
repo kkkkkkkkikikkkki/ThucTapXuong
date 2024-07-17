@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-custom {
+            background-color: #83C5BE; /* Màu nền navbar */
+        }
+        .assize {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #A6E1FA; /* Màu nền phần nội dung */
+        }
+
+        .button-container {
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color:#55d4ff;
+            padding: 60px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-row {
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 500px;
+            /* Ensuring equal width for all buttons */
+            text-align: center;
+        }
+
+        button:hover {
+            background-color: #ddd;
+        }
+
+        .btn-connect {
+            background-color: #f195caf0;
+            color: white;
+        }
+
+        .btn-cancel {
+            background-color: #f9f960d5;
+            color: white;
+        }
+
+        .btn-discord {
+            background-color: #89f489;
+            color: white;
+        }
+
+        .contai{
+            background-color: #cceef9;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="../static/image/Black Green Futuristic Game Logo (2).png" alt="Logo" width="50" height="50" class="d-inline-block align-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav mx-auto d-flex justify-content-between w-50">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Play</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Connect Wallet</a>
+                </li>
+            </ul>
+            <a href="#" class="navbar-icon">
+                <img src="../static/image/icons8-user-48.png" alt="User Icon" width="30" height="30">
+            </a>
+        </div>
+    </div>
+</nav>
+<!-- connect -->
+<div class="assize">
+    <div class="button-container">
+            <h2>Connect Wallet</h2>
+        <form action="">
+            <div class="form-row">
+                <button class="btn-connect">Connect Wallet PhanTom</button>
+            </div>
+            <div class="form-row">
+                <button class="btn-cancel">Connect Discord</button>
+            </div>
+            <div class="form-row">
+                <button class="btn-discord">Connect Twitter</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
