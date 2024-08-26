@@ -1,15 +1,14 @@
-package com.phong.thuctapxuong;
+package com.phong.thuctapxuong.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/home")
-public class test {
-    @GetMapping("/index")
-    public String home(Model model){
-    return "Home";
+public class connectController {
+    @GetMapping("/")
+    public String Connect() {
+        return "Connect";
     }
 }
