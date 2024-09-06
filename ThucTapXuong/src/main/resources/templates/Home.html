@@ -115,6 +115,44 @@
             background-image: radial-gradient(farthest-side at bottom left, #271d3b, transparent 900px), radial-gradient(farthest-corner at bottom right, #3a233f, transparent 1000px);
             background-color: #000000;
 
+
+
+        }
+
+        .footer {
+            background-color: #ffffff;
+            color: black;
+            padding: 40px 0;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: black;
+        }
+
+        .social-icons a {
+            color: black;
+            font-size: 20px;
+            margin-right: 15px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: black;
+        }
+
+        .custom-line {
+            border: 0;
+            height: 2px;
+            background-color: #000;
+            /* Màu của đường kẻ */
+            box-shadow: 0 10px 3px -1px rgba(0, 0, 0, 0.5);
+            /* Đổ bóng */
         }
     </style>
 
@@ -123,7 +161,7 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <img src="../static/imgae/[removal.ai]_d6678381-5b67-4592-aa32-18f53d2ab012-logo.png" alt="Logo" width="90px">
+            <img src="../static/image/[removal.ai]_d6678381-5b67-4592-aa32-18f53d2ab012-logo.png" alt="Logo" width="90px">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -150,9 +188,12 @@
 </div>
 
 <!-- Play Button -->
-<button id="play-button" class="btn btn-primary fixed-bottom mb-3 me-3">
-    <i class="bi bi-play"></i> Play to game
-</button>
+<a href="Level.html">
+    <button id="play-button" class="btn btn-primary fixed-bottom mb-3 me-3">
+        <i class="bi bi-play"></i> Play to game
+    </button>
+</a>
+
 
 <!-- Image Grid -->
 <div class="row mt-5">
@@ -175,23 +216,44 @@
     <img src="../static/image/Believe Achieve.png" alt="Footer Image" class="img-fluid">
 </div>
 
-<footer class="footer">
-    <div class="row">
-        <div class="col-sm-6" style="margin-top: 50px;">
-            <img src="../static/image/sln.jpg" alt="" width="200px">
-            <h6 style="margin-left: 50px;">© 2024 Solana Foundation. All rights reserved.</h6>
+<footer>
+    <!-- Nội dung footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-2">Managed by</p>
+                    <a>
+                        <h3>Việt Nam Mastermind</h3>
+                    </a>
+                    <div class="social-icons mt-3">
+                        <a href="/youtube" aria-label="YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="/twitter" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="/discord" aria-label="Discord" target="_blank"><i class="fab fa-discord"></i></a>
+                        <a href="/reddit" aria-label="Reddit" target="_blank"><i class="fab fa-reddit"></i></a>
+                        <a href="/github" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="/telegram" aria-label="Telegram" target="_blank"><i
+                                class="fab fa-telegram"></i></a>
+                    </div>
+                    <p class="mt-4">© 2024 Việt Nam Mastermind. All rights reserved.</p>
+                </div>
+                <div class="col-md-4 text-center text-md-start">
+                    <h5 class="mb-3">Việt Nam Mastermind</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Trợ cấp</a></li>
+                        <li><a href="#">Việt Nam Mastermind Break</a></li>
+                        <li><a href="#">Media Kit</a></li>
+                        <li><a href="#">Nghề nghiệp</a></li>
+                        <li><a href="#">Từ chối</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center text-md-start">
+                    <h5 class="mb-3">Giới thiệu</h5>
+                    <p>Việt Nam Mastermind sẽ mang đến cho các bạn những trải nghiệm giải trí tuyệt vời nhất.</p>
+                </div>
+            </div>
         </div>
-
-        <div class="col-sm-3" style="margin-top: 50px;">
-            <h2>SOLANA</h2>
-            <h4>Solana</h4>
-            <h4>Solana</h4>
-            <h4>Solana</h4>
-            <h4>Solana</h4>
-            <h4>Solana</h4>
-            <h4>Solana</h4>
-        </div>
-        <div class="col-sm-3"></div>
     </div>
 </footer>
 

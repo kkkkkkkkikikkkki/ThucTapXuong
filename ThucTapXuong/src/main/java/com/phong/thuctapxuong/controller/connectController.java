@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class connectController {
     @GetMapping("/")
     public String Connect() {
-        return "Connect";
+        return "Level";
     }
 }
